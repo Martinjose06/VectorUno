@@ -221,9 +221,12 @@ public class VectorUno extends javax.swing.JFrame {
 
         for (int i = 0; i < v.length; i++) {
 
-            may = v[0];
-            men = v[0];
+            if (i == 0) {
 
+                may = v[0];
+                men = v[0];
+
+            }
             if (v[i] > may) {
                 may = v[i];
             }
@@ -258,10 +261,12 @@ public class VectorUno extends javax.swing.JFrame {
         }
 
         for (int i = 0; i < v.length; i++) {
+            if (i == 0) {
 
-            may = v[0];
-            men = v[0];
+                may = v[0];
+                men = v[0];
 
+            }
             if (v[i] > may) {
                 may = v[i];
             }
